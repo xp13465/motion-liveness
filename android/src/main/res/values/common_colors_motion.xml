@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_light_gray">#c8c8c8</color>
+
+    <!-- Toast-->
+    <color name="common_interaction_dark_gray">#424242</color>
+    <color name="common_interaction_dark_blue">#0e1533</color>
+
+    <!-- Main colors-->
+    <color name="common_interaction_ginger_pink">#FF9497</color>
+    <color name="common_interaction_light_gray">#777777</color>
+    <color name="common_interaction_light_warm_gray">#D9D9D9</color>
+    <color name="common_interaction_little_dark_gray">#555555</color>
+    <color name="common_interaction_light_gray_text">#c7c7c7</color>
+</resources>

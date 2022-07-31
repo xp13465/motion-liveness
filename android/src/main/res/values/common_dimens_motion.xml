@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Text Size -->
+    <dimen name="common_text_size_normal">20sp</dimen>
+    <dimen name="common_interaction_text_size_large">18sp</dimen>
+
+    <!-- Margin -->
+    <dimen name="common_interaction_margin_screen_edge">20dp</dimen>
+
+</resources>

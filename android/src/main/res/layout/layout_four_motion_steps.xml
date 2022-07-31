@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/line_first_to_second"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/common_interaction_light_gray" />
+
+        <View
+            android:id="@+id/line_second_to_third"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/common_interaction_light_gray" />
+
+        <View
+            android:id="@+id/line_third_to_fourth"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/common_interaction_light_gray" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_first_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+        <com.reactnativemotionliveness.view.WaterRippleView
+            android:id="@+id/ripple_step_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleCenterIcon="@drawable/common_ic_motion_step_wait"
+            app:rippleColor="@color/common_interaction_ginger_pink"
+            app:rippleCount="1"
+            app:rippleSpeed="2" />
+
+        <TextView
+            android:id="@+id/txt_step_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="name"
+            android:textColor="@color/common_interaction_ginger_pink"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/ripple_step_first"
+            app:layout_constraintRight_toRightOf="@id/ripple_step_first"
+            app:layout_constraintTop_toBottomOf="@id/ripple_step_first" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layout_first_step"
+        android:gravity="center_horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_step_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.reactnativemotionliveness.view.WaterRippleView
+                android:id="@+id/ripple_step_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleCenterIcon="@drawable/common_ic_motion_step_wait"
+                app:rippleColor="@color/common_interaction_ginger_pink"
+                app:rippleCount="1"
+                app:rippleSpeed="2" />
+
+            <TextView
+                android:id="@+id/txt_step_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ripple_step_second"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="name"
+                android:textColor="@color/common_interaction_ginger_pink"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@id/ripple_step_second"
+                app:layout_constraintRight_toRightOf="@id/ripple_step_second"
+                app:layout_constraintTop_toBottomOf="@id/ripple_step_second" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.reactnativemotionliveness.view.WaterRippleView
+                android:id="@+id/ripple_step_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleCenterIcon="@drawable/common_ic_motion_step_wait"
+                app:rippleColor="@color/common_interaction_ginger_pink"
+                app:rippleCount="1"
+                app:rippleSpeed="2" />
+
+            <TextView
+                android:id="@+id/txt_step_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ripple_step_third"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="name"
+                android:textColor="@color/common_interaction_ginger_pink"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@id/ripple_step_third"
+                app:layout_constraintRight_toRightOf="@id/ripple_step_third"
+                app:layout_constraintTop_toBottomOf="@id/ripple_step_third" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_step_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.reactnativemotionliveness.view.WaterRippleView
+                android:id="@+id/ripple_step_fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleCenterIcon="@drawable/common_ic_motion_step_wait"
+                app:rippleColor="@color/common_interaction_ginger_pink"
+                app:rippleCount="1"
+                app:rippleSpeed="2"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_step_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ripple_step_fourth"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="name"
+                android:textColor="@color/common_interaction_ginger_pink"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@id/ripple_step_fourth"
+                app:layout_constraintRight_toRightOf="@id/ripple_step_fourth"
+                app:layout_constraintTop_toBottomOf="@id/ripple_step_fourth" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>
