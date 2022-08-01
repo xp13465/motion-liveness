@@ -111,11 +111,6 @@
                 licensePathStr = [[NSBundle mainBundle] pathForResource:@"cml-tf" ofType:@"lic"];
             } else if ([identifier isEqualToString:@"com.weiliancm.chat"]) {
                 licensePathStr = [[NSBundle mainBundle] pathForResource:@"cml-dev" ofType:@"lic"];
-            } else if ([identifier isEqualToString:@"com.caomei.yumeng"]) {
-                licensePathStr = [[NSBundle mainBundle] pathForResource:@"cml-ym-appstore" ofType:@"lic"];
-            } else {
-                //默认yitu.lic
-                licensePathStr = [[NSBundle mainBundle] pathForResource:@"yitu" ofType:@"lic"];
             }
             
             if (!licensePathStr) {
