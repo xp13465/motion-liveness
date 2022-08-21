@@ -37,8 +37,8 @@ public abstract class AbstractMotionLivenessView extends RelativeLayout implemen
     protected Handler handler = new Handler(Looper.getMainLooper());
 
     //请将账户信息补全，然后删除此行。Fill in your account info below, and delete this line.
-    protected static String API_KEY = "5795cb839ce943cfb08159f0e42a8f9f";
-    protected static String API_SECRET = "61f78cc79f884e1ba9f3042e9fa67bfd";
+    protected static String API_KEY = "5795cb839ce943cfb08159f0e42a8f90";
+    protected static String API_SECRET = "61f78cc79f884e1ba9f3042e9fa67bf0";
     protected static final String LICENSE_FILE_NAME = "motion-liveness.lic";
 
     protected static final String DETECTION_MODEL_FILE_NAME = "M_Detect_Hunter_SmallFace.model";
